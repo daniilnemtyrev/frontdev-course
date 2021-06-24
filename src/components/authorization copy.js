@@ -14,14 +14,16 @@ buttonAuth.addEventListener("click", function (e) {
     login: document.getElementById("login").value,
     password: document.getElementById("password").value,
   };
+  var requestURL = "http://localhost:3000/users";
+  var request = new XMLHttpRequest();
+  request.open("GET", requestURL);
+  request.responseType = "json";
+  request.send();
 
-  fetch("http://localhost:3000/users")
-    .then((response) => {
-      return response.json();
-    })
-    .then((dataJson) => {
-      checkUser(dataJson, userNew);
-    });
+  request.onload = function () {
+    var usersExists = request.response;
+    checkUser(usersExists, userNew);
+  };
 
   function checkUser(objJSON, objInput) {
     for (let key in objJSON) {
@@ -36,9 +38,9 @@ buttonAuth.addEventListener("click", function (e) {
     }
   }
 
-  //   function addUser(objInput) {
-  //     request.open("POST", requestURL);
-  //     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  //     request.send(JSON.stringify(objInput));
-  //   }
+//   function addUser(objInput) {
+//     request.open("POST", requestURL);
+//     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+//     request.send(JSON.stringify(objInput));
+//   }
 });
