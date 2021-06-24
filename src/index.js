@@ -1,29 +1,19 @@
-const tabs = document.querySelector('.tabs')
-const films = document.querySelector('.films')
-const tv = document.querySelector('.tv')
-const buttonFilms = document.querySelector('.tabs__button-films')
-const buttonTv = document.querySelector('.tabs__button-tv')
+import './components/authorization'
+import './components/films'
+import './components/popup'
+import './components/tabs'
 
-tabs.addEventListener('click', function(e) {
-    target = e.target;
-    if(target.classList.contains('tabs__button-films')){
-        films.classList.remove('none')
-        films.classList.add('active-films')
-        tv.classList.remove('active-tv')
-        tv.classList.add('none')
-        buttonFilms.classList.add('active-tab')
-        buttonTv.classList.remove('active-tab')
-    }
+//img
+import '../img/2x2.svg'
+import '../img/amedia.svg'
+import '../img/bat.svg'
+import '../img/cat.svg'
+import '../img/first.svg'
+import '../img/footer-logo.svg'
+import '../img/girl.svg'
+import '../img/odn.svg'
+import '../img/rbc-seeklogo.com.svg'
+import '../img/rbc.svg'
 
-    if(target.classList.contains('tabs__button-tv')){
-        tv.classList.remove('none')
-        tv.classList.add('active-tv')
-        films.classList.remove('active-films')
-        films.classList.add('none')
-        buttonTv.classList.add('active-tab')
-        buttonFilms.classList.remove('active-tab')
-    }
-})
-
-
-
+//style
+import './style.scss'

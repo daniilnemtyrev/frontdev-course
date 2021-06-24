@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "login": "onepunchman",
+      "password": "1234"
+    },
+    {
+      "login": "superman",
+      "password": "12345"
+    },
+    {
+      "login": "dragons",
+      "password": "123456"
+    }
+  ]
+}

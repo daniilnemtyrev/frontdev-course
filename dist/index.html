@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+  <script defer src="bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <div class="header__logo">
+            <div class="header__sign">
+              <div class="header__ellipse">
+                <div class="header__triangle"></div>
+              </div>
+            </div>
+            <p class="header__text-logo">Видеосервис</p>
+          </div>
+          <div class="header__search">
+            <input class="header__input" type="text" placeholder="Поиск..." />
+            <button class="header__search-button">Найти</button>
+          </div>
+          <div class="header__auth">
+            <p class="header__username"></p>
+          <button class="header__auth-button">Войти</button>
+          <button class="header__auth-quit">Выйти</button>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <button class="tabs__button-films">Фильмы</button>
+          <button class="tabs__button-tv">Телеканалы</button>
+        </div>
+
+        <div class="films">
+          <div class="new">
+            <p class="new__text">🔥 Новинки</p>
+            <div class="new__new-tabs">
+              <div class="new__new-tabs-item">
+                <img src="img/cat.svg" class="new__new-tabs-item-img" alt="" />
+                <div class="new__hover-card-active new-close">
+                  <div class="new__hover-card-active-text-container">
+                    <p class="new__hover-card-active-text" name="fulltext">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aut at sed dolore nostrum unde architecto voluptatum magni
+                      amet id deserunt.
+                    </p>
+                  </div>
+                </div>
+                <p class="new__new-tabs-item-text">
+                  Мульт в кино. Выпуск №103. Некогда грустить!
+                </p>
+              </div>
+
+              <div class="new__new-tabs-item">
+                <img src="img/bat.svg" class="new__new-tabs-item-img" alt="" />
+                <div class="new__hover-card-active new-close">
+                  <div class="new__hover-card-active-text-container">
+                    <p class="new__hover-card-active-text" name="fulltext">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aut at sed dolore nostrum unde architecto voluptatum magni
+                      amet id deserunt.
+                    </p>
+                  </div>
+                </div>
+                <p class="new__new-tabs-item-text">Новый Бэтмен</p>
+              </div>
+
+              <div class="new__new-tabs-item">
+                <img src="img/odn.svg" class="new__new-tabs-item-img" alt="" />
+                <div class="new__hover-card-active new-close">
+                  <div class="new__hover-card-active-text-container">
+                    <p class="new__hover-card-active-text" name="fulltext">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aut at sed dolore nostrum unde architecto voluptatum magni
+                      amet id deserunt.
+                    </p>
+                  </div>
+                </div>
+                <p class="new__new-tabs-item-text">Однажды... в Голливуде</p>
+              </div>
+
+              <div class="new__new-tabs-item">
+                <img src="img/girl.svg" class="new__new-tabs-item-img" alt="" />
+                <div class="new__hover-card-active new-close">
+                  <div class="new__hover-card-active-text-container">
+                    <p class="new__hover-card-active-text" name="fulltext">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aut at sed dolore nostrum unde architecto voluptatum magni
+                      amet id deserunt.
+                    </p>
+                  </div>
+                </div>
+                <p class="new__new-tabs-item-text">Стриптизёрши</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="genres">
+            <p class="genres__text">Жанры</p>
+            <div class="genres__genres-tabs">
+              <div class="genres__genres-tabs-item genres__back-com">
+                <p class="genres__smile">😁</p>
+                <p class="genres__genres-tabs-item-text">Комедии</p>
+              </div>
+
+              <div class="genres__genres-tabs-item genres__back-dram">
+                <p class="genres__smile">😭</p>
+                <p class="genres__genres-tabs-item-text">Драмы</p>
+              </div>
+
+              <div class="genres__genres-tabs-item genres__back-skyfi">
+                <p class="genres__smile">👽</p>
+                <p class="genres__genres-tabs-item-text">Фантастика</p>
+              </div>
+
+              <div class="genres__genres-tabs-item genres__back-scream">
+                <p class="genres__smile">👻</p>
+                <p class="genres__genres-tabs-item-text">Ужасы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tv none">
+          <div class="tv__channel-block">
+            <img
+              src="img/first.svg"
+              class="tv__logo tv__channel-logo-first"
+              alt=""
+            />
+            <p class="tv__channel-name">Первый канал</p>
+            <div class="tv__channel-programm">
+              <div class="tv__channel-programm-time">
+                <p class="tv__channel-programm-text tv__first">13:00</p>
+                <p class="tv__channel-programm-text">14:00</p>
+                <p class="tv__channel-programm-text">15:00</p>
+              </div>
+              <div class="tv__channel-programm-text">
+                <p class="tv__channel-programm-text tv__first">Наруто</p>
+                <p class="tv__channel-programm-text">Путин в тайге</p>
+                <p class="tv__channel-programm-text">Бабобой</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv__channel-block">
+            <img
+              src="img/2x2.svg"
+              class="tv__logo tv__channel-logo-2x2"
+              alt=""
+            />
+            <p class="tv__channel-name">2х2</p>
+            <div class="tv__channel-programm">
+              <div class="tv__channel-programm-time">
+                <p class="tv__channel-programm-text tv__first">13:00</p>
+                <p class="tv__channel-programm-text">14:00</p>
+                <p class="tv__channel-programm-text">15:00</p>
+              </div>
+              <div class="tv__channel-programm-text">
+                <p class="tv__channel-programm-text tv__first">Наруто</p>
+                <p class="tv__channel-programm-text">Путин в тайге</p>
+                <p class="tv__channel-programm-text">Бабобой</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv__channel-block">
+            <img
+              src="img/rbc.svg"
+              class="tv__logo tv__channel-logo-rbc"
+              alt=""
+            />
+            <p class="tv__channel-name">РБК</p>
+            <div class="tv__channel-programm">
+              <div class="tv__channel-programm-time">
+                <p class="tv__channel-programm-text tv__first">13:00</p>
+                <p class="tv__channel-programm-text">14:00</p>
+                <p class="tv__channel-programm-text">15:00</p>
+              </div>
+              <div class="tv__channel-programm-text">
+                <p class="tv__channel-programm-text tv__first">Наруто</p>
+                <p class="tv__channel-programm-text">Путин в тайге</p>
+                <p class="tv__channel-programm-text">Бабобой</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv__channel-block">
+            <img
+              src="img/amedia.svg"
+              class="tv__logo tv__channel-logo-amedia"
+              alt=""
+            />
+            <p class="tv__channel-name">AMEDIA PREMIUM</p>
+            <div class="tv__channel-programm">
+              <div class="tv__channel-programm-time">
+                <p class="tv__channel-programm-text tv__first">13:00</p>
+                <p class="tv__channel-programm-text">14:00</p>
+                <p class="tv__channel-programm-text">15:00</p>
+              </div>
+              <div class="tv__channel-programm-text">
+                <p class="tv__channel-programm-text tv__first">Наруто</p>
+                <p class="tv__channel-programm-text">Путин в тайге</p>
+                <p class="tv__channel-programm-text">Бабобой</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv__channel-block">
+            <img
+              src="img/amedia.svg"
+              class="tv__logo tv__channel-logo-amedia"
+              alt=""
+            />
+            <p class="tv__channel-name">AMEDIA PREMIUM</p>
+            <div class="tv__channel-programm">
+              <div class="tv__channel-programm-time">
+                <p class="tv__channel-programm-text tv__first">13:00</p>
+                <p class="tv__channel-programm-text">14:00</p>
+                <p class="tv__channel-programm-text">15:00</p>
+              </div>
+              <div class="tv__channel-programm-text">
+                <p class="tv__channel-programm-text tv__first">Наруто</p>
+                <p class="tv__channel-programm-text">Путин в тайге</p>
+                <p class="tv__channel-programm-text">Бабобой</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer__content">
+            <img src="img/footer-logo.svg" class="footer__logo" alt="" />
+            <div class="footer__menu">
+              <p class="footer__text">
+                426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла
+                Маркса, 246 (ДК «Металлург»)
+              </p>
+              <p class="footer__text">+7 (3412) 93-88-61, 43-29-29</p>
+              <a class="footer__link" href="https://htc-cs.ru/">htc-cs.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <p class="popup__name">Вход</p>
+          <input
+            id="login"
+            type="text"
+            class="popup__input"
+            placeholder="Логин"
+          />
+          <input
+            id="password"
+            type="text"
+            class="popup__input"
+            placeholder="Пароль"
+          />
+          <div class="popup__checkbox-full">
+            <input type="checkbox" name="" class="popup__input-checkbox" />
+            <p class="popup__checkbox-name">Запомнить</p>
+          </div>
+          <button class="popup__input-button">Войти</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
