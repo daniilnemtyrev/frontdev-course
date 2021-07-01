@@ -21,7 +21,7 @@
   margin-top: 32px;
   border-radius: 0px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 
   //logo
   &__logo {
@@ -71,7 +71,7 @@
     font-family: Rubik;
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -87,6 +87,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 207px;
+    margin-right: 276px;
+    margin-top: 11px;
   }
 
   &__input {
@@ -98,12 +101,13 @@
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
     color: #828282;
     border-bottom: 1px solid #333333;
+    margin-right: 32px;
   }
 
   &__search-button {
@@ -113,13 +117,14 @@
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    //font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
     color: #e5261e;
     background: #fff;
     border: none;
     cursor: pointer;
+    margin-bottom: 6px;
   }
 
   &__auth {
@@ -137,12 +142,13 @@
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    //font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
     cursor: pointer;
+    margin-top: 8px;
   }
 
   &__auth-quit {
@@ -153,7 +159,7 @@
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    //font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
     color: #e5261e;
@@ -166,7 +172,7 @@
   &__username {
     font-family: Rubik;
     font-style: normal;
-    font-weight: 500;
+    //font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #333333;
@@ -176,10 +182,10 @@
 .tabs {
   height: 42px;
   width: 311px;
-  margin: 48px 564px 41px 565px;
+  margin: 48px 564px 0px 565px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
 
   &__button-films {
     height: 33px;
@@ -187,19 +193,23 @@
     font-family: Rubik;
     font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     line-height: 33px;
     letter-spacing: 0em;
     background: #fff;
     color: #000;
     border: none;
+    
   }
 
   &__button-films:hover {
-    border-bottom: 2px solid #e5261e;
     color: #e5261e;
-    padding-bottom: 9px;
     cursor: pointer;
+  }
+
+  &__button-films-border:hover {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #e5261e;
   }
 
   &__button-tv {
@@ -208,7 +218,7 @@
     font-family: Rubik;
     font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     line-height: 33px;
     letter-spacing: 0em;
     background: #fff;
@@ -217,7 +227,6 @@
   }
 
   &__button-tv:hover {
-    border-bottom: 2px solid #e5261e;
     color: #e5261e;
     cursor: pointer;
   }
@@ -226,16 +235,20 @@
 .new {
   height: 478px;
   width: 1180px;
-  margin: 41px 130px 32px 130px;
-  &__text {
+  margin: 32px 130px 32px 130px;
+  &__text-container {
     height: 28px;
-    width: 134px;
+    width: 140px;
+    margin-bottom: 15px;
+  }
+  &__text {
     font-family: Rubik;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0em;
+    color: #333333;
   }
   &__new-tabs {
     display: flex;
@@ -250,6 +263,7 @@
     height: 370px;
     width: 280px;
     border-radius: 8px;
+    margin-bottom: 12px;
   }
   &__new-tabs-item-text {
     height: 48px;
@@ -257,7 +271,7 @@
     font-family: Rubik;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    //font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
@@ -304,13 +318,13 @@
 .genres {
   height: 252px;
   width: 1180px;
-  margin: 41px 130px 32px 130px;
+  margin: 0px 130px 32px 130px;
   &__text {
     height: 28px;
     width: 87px;
     font-family: Rubik;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: left;
@@ -356,15 +370,41 @@
 
   &__back-com {
     background: linear-gradient(127.83deg, #f2c94c 8.44%, #f29a4a 91.36%);
+    opacity: 0.8;
+    transition: all 0.8s ease 0s;
+    
   }
   &__back-dram {
     background: linear-gradient(127.83deg, #f2994a 8.44%, #eb5757 91.36%);
+    opacity: 0.8;
+    transition: all 0.8s ease 0s;
   }
   &__back-skyfi {
     background: linear-gradient(127.83deg, #56ccf2 8.44%, #2f80ed 91.36%);
+    opacity: 0.8;
+    transition: all 0.8s ease 0s;
   }
   &__back-scream {
     background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+    opacity: 0.8;
+    transition: all 0.8s ease 0s;
+  }
+
+  &__back-com:hover {
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+  }
+  &__back-dram:hover {
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+  }
+  &__back-skyfi:hover {
+    opacity: 1;
+    transition: all 0.8s ease 0s;
+  }
+  &__back-scream:hover {
+    opacity: 1;
+    transition: all 0.8s ease 0s;
   }
 }
 
@@ -388,7 +428,7 @@
   &__link {
     font-family: Rubik;
     font-style: normal;
-    font-weight: 500;
+    //font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #1f4766;
@@ -397,11 +437,12 @@
   }
 
   &__text {
+    width: 750px;
     font-family: Rubik;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 21px;
     color: #333333;
   }
 }
@@ -417,6 +458,7 @@
   margin-bottom: 72px;
   overflow-y: scroll;
   overflow-x: hidden;
+  margin-top: 27px;
 
   &__channel-block {
     height: 162px;
@@ -458,7 +500,7 @@
     padding-top: 21px;
     font-family: Rubik;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #333333;
@@ -468,7 +510,7 @@
     padding-top: 17px;
     width: 200px;
     display: flex;
-    justify-content: space-between;
+    width: 694px;
   }
 
   &__channel-programm-text {
@@ -522,7 +564,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 40px 10px;
   }
 
   &__content {
@@ -541,13 +583,13 @@
     width: 70px;
     font-family: Rubik;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     font-size: 28px;
     line-height: 33px;
     text-align: right;
     color: #333333;
     padding-top: 36px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
   }
 
   &__input {
@@ -560,7 +602,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #828282;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
     height: 19px;
   }
 
@@ -594,7 +636,7 @@
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    //font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
@@ -626,6 +668,9 @@
 }
 
 .active-tab {
-  border-bottom: 2px solid #e5261e;
+  border-bottom: 2px solid #e5261e; 
+}
+
+.active-color-text {
   color: #e5261e;
 }
