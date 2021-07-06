@@ -9,9 +9,8 @@
 }
 
 .main {
-  height: 100vh;
   width: 1440px;
-  border-radius: 0px;
+  margin: 0 auto;
 }
 
 .header {
@@ -166,6 +165,10 @@
   margin-top: 8px;
 }
 
+.header__auth-button:hover {
+  background: #CC221B;
+}
+
 .header__auth-quit {
   display: none;
   height: 19px;
@@ -286,6 +289,7 @@
   width: 280px;
   border-radius: 8px;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .new__new-tabs-item-text {
@@ -310,6 +314,7 @@
   opacity: 0.8;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  cursor: pointer;
 }
 
 .new__hover-card-active-text {
@@ -462,6 +467,8 @@
   width: 100%;
   background: #f2f2f2;
   margin-top: 72px;
+  left: 0;
+  position: absolute;
 }
 
 .footer__logo {
@@ -582,6 +589,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #333333;
+  list-style-type: none;
 }
 
 .tv__first {
@@ -719,6 +727,21 @@
   cursor: pointer;
 }
 
+.validError {
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 6px;
+  margin: 5px 30px 5px 30px;
+  text-align: center;
+}
+
+.validError__text {
+  color: red;
+  font-family: Rubik;
+  font-size: 10px;
+  padding: 2px;
+}
+
 .open {
   opacity: 1;
   visibility: visible;
@@ -731,6 +754,10 @@
 
 .none {
   display: none;
+}
+
+.block {
+  display: block;
 }
 
 .active-films {

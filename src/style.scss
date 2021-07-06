@@ -9,12 +9,11 @@
 }
 
 .main {
-  height: 100vh;
   width: 1440px;
-  border-radius: 0px;
+  margin: 0 auto;
 }
 
-.header {
+ .header {
   height: 40px;
   width: 1180px;
   margin: 32px 130px 0px 130px;
@@ -151,6 +150,10 @@
     margin-top: 8px;
   }
 
+  &__auth-button:hover {
+    background: #CC221B;
+  }
+
   &__auth-quit {
     display: none;
     height: 19px;
@@ -212,6 +215,11 @@
     border-bottom: 2px solid #e5261e;
   }
 
+  &__button-tv-border:hover {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #e5261e;
+  }
+
   &__button-tv {
     height: 33px;
     width: 171px;
@@ -264,6 +272,7 @@
     width: 280px;
     border-radius: 8px;
     margin-bottom: 12px;
+    cursor: pointer;
   }
   &__new-tabs-item-text {
     height: 48px;
@@ -287,6 +296,7 @@
     background: #333333;
     opacity: 0.8;
     transition: all 0.8s ease 0s;
+    cursor: pointer;
   }
 
   &__hover-card-active-text {
@@ -413,6 +423,13 @@
   width: 100%;
   background: #f2f2f2;
   margin-top: 72px;
+  left: 0;
+  position: absolute;
+  
+
+  &__content {
+    
+  }
 
   &__logo {
     float: left;
@@ -511,6 +528,7 @@
     width: 200px;
     display: flex;
     width: 694px;
+    
   }
 
   &__channel-programm-text {
@@ -522,6 +540,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #333333;
+    list-style-type: none;
   }
 
   &__first {
@@ -645,6 +664,21 @@
   }
 }
 
+.validError {
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 6px;
+  margin: 5px 30px 5px 30px;
+  text-align: center;
+
+  &__text{
+    color: red;
+    font-family: Rubik;
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+
 .open {
   opacity: 1;
   visibility: visible;
@@ -657,6 +691,10 @@
 
 .none {
   display: none;
+}
+
+.block {
+  display: block;
 }
 
 .active-films {
