@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 
- .header {
+.header {
   height: 40px;
   width: 1180px;
   margin: 32px 130px 0px 130px;
@@ -21,6 +21,7 @@
   border-radius: 0px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   //logo
   &__logo {
@@ -151,7 +152,7 @@
   }
 
   &__auth-button:hover {
-    background: #CC221B;
+    background: #cc221b;
   }
 
   &__auth-quit {
@@ -188,7 +189,6 @@
   margin: 48px 564px 0px 565px;
   display: flex;
   justify-content: space-between;
-  
 
   &__button-films {
     height: 33px;
@@ -202,7 +202,6 @@
     background: #fff;
     color: #000;
     border: none;
-    
   }
 
   &__button-films:hover {
@@ -382,7 +381,6 @@
     background: linear-gradient(127.83deg, #f2c94c 8.44%, #f29a4a 91.36%);
     opacity: 0.8;
     transition: all 0.8s ease 0s;
-    
   }
   &__back-dram {
     background: linear-gradient(127.83deg, #f2994a 8.44%, #eb5757 91.36%);
@@ -425,10 +423,8 @@
   margin-top: 72px;
   left: 0;
   position: absolute;
-  
 
   &__content {
-    
   }
 
   &__logo {
@@ -528,7 +524,6 @@
     width: 200px;
     display: flex;
     width: 694px;
-    
   }
 
   &__channel-programm-text {
@@ -671,7 +666,7 @@
   margin: 5px 30px 5px 30px;
   text-align: center;
 
-  &__text{
+  &__text {
     color: red;
     font-family: Rubik;
     font-size: 10px;
@@ -706,9 +701,24 @@
 }
 
 .active-tab {
-  border-bottom: 2px solid #e5261e; 
+  border-bottom: 2px solid #e5261e;
 }
 
 .active-color-text {
   color: #e5261e;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color:#333333
 }

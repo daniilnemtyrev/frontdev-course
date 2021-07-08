@@ -25,6 +25,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -166,7 +167,7 @@
 }
 
 .header__auth-button:hover {
-  background: #CC221B;
+  background: #cc221b;
 }
 
 .header__auth-quit {
@@ -225,6 +226,11 @@
 }
 
 .tabs__button-films-border:hover {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #e5261e;
+}
+
+.tabs__button-tv-border:hover {
   padding-bottom: 7px;
   border-bottom: 2px solid #e5261e;
 }
@@ -776,5 +782,24 @@
 
 .active-color-text {
   color: #e5261e;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
